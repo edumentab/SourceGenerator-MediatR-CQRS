@@ -1,0 +1,29 @@
+﻿using MediatR;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using SourceGenerator_MediatR_CQRS;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace CodeGenerated
+{
+    /// <summary>
+    /// This is the controller for all the queries in the system
+    /// </summary>
+    [Route("api/[controller]/[Action]")]
+    [ApiController]
+    public class QueryController : ControllerBase
+    {
+        private readonly IMediator _mediator;
+        public QueryController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
+
+        //The query action methods will be inserted here by the source generator        
+
+        ###Queries###
+   }
+}

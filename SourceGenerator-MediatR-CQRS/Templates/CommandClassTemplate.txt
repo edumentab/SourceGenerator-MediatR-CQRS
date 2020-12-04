@@ -1,0 +1,29 @@
+﻿using MediatR;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using SourceGenerator_MediatR_CQRS;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace CodeGenerated
+{
+    /// <summary>
+    /// This is the controller class for all the commands in the system
+    /// </summary>
+    [Route("api/[controller]/[Action]")]
+    [ApiController]
+    public class CommandController : ControllerBase
+    {
+        private readonly IMediator _mediator;
+
+        public CommandController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
+
+        //The command action methods will be inserted here by the source generator        
+        ###Commands###
+    }
+}
